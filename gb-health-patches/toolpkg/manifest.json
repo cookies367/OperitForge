@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "toolpkg_id": "com.operit.miband_health",
+  "version": "0.5.0",
+  "author": "Operit",
+  "main": "main.js",
+  "display_name": {
+    "zh": "小米手环健康数据",
+    "en": "Mi Band Health Data"
+  },
+  "description": {
+    "zh": "读取小米手环8的实时健康数据（心率、血氧、步数、睡眠），支持AI工具调用和菜单一键注入",
+    "en": "Read Mi Band 8 real-time health data (HR, SpO2, steps, sleep), with AI tool calling and one-click injection"
+  },
+  "subpackages": [
+    {
+      "id": "health_data",
+      "entry": "packages/health_data.js",
+      "enabled_by_default": true,
+      "display_name": {
+        "zh": "健康数据工具"
+      },
+      "description": {
+        "zh": "提供读取小米手环8健康数据的AI工具函数"
+      }
+    }
+  ]
+}
